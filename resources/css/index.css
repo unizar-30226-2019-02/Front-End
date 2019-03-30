@@ -1,5 +1,5 @@
 body{
-  background-color: #7ECAFB;
+    background-color: #7ECAFB;
 }
 .title{
     color: black;
@@ -18,11 +18,13 @@ body{
     position: relative;
 }
 #table{
-  margin-top:100px;
-  margin-left: 400px;
-  margin-right: 450px;
-  background-color: white;
-  align-self: center;
+    margin-top:100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    align-self: center;
+    align-content: center;
+    width: 520px;
 }
 
 .userID{
