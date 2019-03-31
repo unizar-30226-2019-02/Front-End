@@ -28,17 +28,22 @@ body{
 }
 
 .userID{
+    margin-left: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.cabezaUserID{
     margin-top: 40px;
     margin-left: 50px;
     width: 70%;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 1px solid #7ECAFB;
-    display: inline-block;
-    padding: 10px 20px;
 }
+
 .userMail{
-    margin-top: 20px;
     margin-left: 50px;
     width: 70%;
     box-sizing: border-box;
@@ -46,10 +51,27 @@ body{
     border: 1px solid #7ECAFB;
     display: inline-block;
     padding: 10px 20px;
+}
+
+.cabezaUserMail{
+    margin-left: 50px;
+    width: 70%;
 }
 
 .userCity{
-    margin-top: 20px;
+    margin-left: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.cabezaUserCity{
+    margin-left: 50px;
+    width: 70%;
+}
+.userPasswd{
     margin-left: 50px;
     width: 70%;
     box-sizing: border-box;
@@ -59,19 +81,12 @@ body{
     padding: 10px 20px;
 }
 
-.userPasswd{
-    margin-top: 20px;
+.cabezaUserPasswd{
     margin-left: 50px;
     width: 70%;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 1px solid #7ECAFB;
-    display: inline-block;
-    padding: 10px 20px;
 }
 
 .repeatUserPasswd{
-    margin-top: 20px;
     margin-left: 50px;
     width: 70%;
     box-sizing: border-box;
@@ -79,10 +94,13 @@ body{
     border: 1px solid #7ECAFB;
     display: inline-block;
     padding: 10px 20px;
+}
+.cabezaRepeatUserPasswd{
+    margin-left: 50px;
+    width: 70%;
 }
 
 .username{
-    margin-top: 20px;
     margin-left: 50px;
     width: 70%;
     box-sizing: border-box;
@@ -90,10 +108,14 @@ body{
     border: 1px solid #7ECAFB;
     display: inline-block;
     padding: 10px 20px;
+}
+
+.cabezaUsername{
+    margin-left: 50px;
+    width: 70%;
 }
 
 .usersurname{
-    margin-top: 20px;
     margin-left: 50px;
     width: 70%;
     box-sizing: border-box;
@@ -101,10 +123,14 @@ body{
     border: 1px solid #7ECAFB;
     display: inline-block;
     padding: 10px 20px;
+}
+
+.cabezaUserSurname{
+    margin-left: 50px;
+    width: 70%;
 }
 
 .userPhone{
-    margin-top: 20px;
     margin-left: 50px;
     width: 70%;
     box-sizing: border-box;
@@ -114,6 +140,10 @@ body{
     padding: 10px 20px;
 }
 
+.cabezaUserPhone{
+    margin-left: 50px;
+    width: 70%;
+}
 
 .crearCuenta{
     padding: 10px 24px;
