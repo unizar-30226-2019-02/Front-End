@@ -1,0 +1,135 @@
+body{
+    background-color: #7ECAFB;
+}
+.title{
+    color: black;
+    margin-top: -50px;
+    margin-left: 150px;
+    margin-right: 700px;
+    font-family: "Verdana",sans-serif;
+    align-self: center;
+    float: left;
+}
+.imagenEmpresa{
+    height:50px;
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 750px;
+    position: relative;
+}
+#table{
+    margin-top:100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    align-self: center;
+    align-content: center;
+    width: 520px;
+}
+
+.userID{
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.userMail{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.userCity{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.userPasswd{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.repeatUserPasswd{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.username{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.usersurname{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.userPhone{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+
+.crearCuenta{
+    padding: 10px 24px;
+    margin-left: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 30%;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+.crearCuenta:hover{
+    background-color: white;
+    border: 1px solid #7ECAFB;
+}
+
+a{
+    text-decoration: none;
+}

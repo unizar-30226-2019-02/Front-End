@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>Ebrozon</title>
+    <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
+<div id="table">
+    <img src="img/ebrozon.png" alt="Logo" class="imagenEmpresa"></img>
+    <h1 class="title">Ebrozon</h1>
+    <input class="userID" placeholder="NombreUsuario"></input>
+    <input class="userMail" type="email" placeholder="Correo"></input>
+    <input class="userPasswd" type="password" placeholder="Contraseña"></input>
+    <input class="repeatUserPasswd" type="password" placeholder="Repetir Contraseña"></input>
+    <input class="userPhone" type="tel" placeholder="Teléfono"></input>
+    <input class="username" placeholder="Nombre"></input>
+    <input class="usersurname" placeholder="Apellidos"></input>
+    <select class="userCity">
+        <option value="" disabled selected>Ciudad</option>
+        <option value="1">Zaragoza</option>
+        <option value="2">Soria</option>
+        <option value="3">Málaga</option>
+    </select>
 
+    <a href="index.html"><button type="button"class="crearCuenta">Crear Cuenta</button></a>
+
+</div>
 </body>
+<script src="js/register.js"></script>
 </html>
