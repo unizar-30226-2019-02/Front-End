@@ -28,54 +28,62 @@ body{
 }
 
 .userID{
-  margin-top: 40px;
-  margin-left: 50px;
-  width: 70%;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid #7ECAFB;
-  display: inline-block;
-  padding: 10px 20px;
+    margin-left: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
 }
 .passwdUser{
-  margin-top: 20px;
-  margin-left: 50px;
-  width: 70%;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid #7ECAFB;
-  display: inline-block;
-  padding: 10px 20px;
+    margin-left: 50px;
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.cabezaUsuario{
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 70%;
+}
+.cabezapasswd{
+    margin-left: 50px;
+    width: 70%;
 }
 .pregunta{
-  margin-left: 260px;
+    margin-left: 260px;
 }
 .iniciaSesion{
-  padding: 10px 24px;
-  margin-left: 50px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  width: 30%;
-  border-radius: 4px;
-  border: 1px solid white;
+    padding: 10px 24px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 30%;
+    border-radius: 4px;
+    border: 1px solid white;
 }
 .registrar{
-  padding: 10px 24px;
-  margin-left: 50px;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  width: 30%;
-  border-radius: 4px;
-  border: 1px solid white;
+    padding: 10px 24px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 30%;
+    border-radius: 4px;
+    border: 1px solid white;
 }
 .iniciaSesion:hover{
-  background-color: white;
-  border: 1px solid #7ECAFB;
+    background-color: white;
+    border: 1px solid #7ECAFB;
 }
 .registrar:hover{
-  background-color: white;
-  border: 1px solid #7ECAFB;
+    background-color: white;
+    border: 1px solid #7ECAFB;
 }
 a{
-  text-decoration: none;
+    text-decoration: none;
 }
+
