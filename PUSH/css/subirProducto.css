@@ -1,0 +1,98 @@
+div.c_box1 {
+  margin-top: 50px;
+  border-radius: 10px;
+  border-style: ridge;
+  width: 984px;
+  height: 113px;
+  background-color: #d6d8d3;
+}
+
+.imagenProducto {
+  width: 200px;
+  height: 200px;
+}
+
+#boton_subirProducto {
+  float: right;
+  border-radius: 30px;
+}
+
+#dropDownList_categorias {
+  margin-top: 30px;
+  margin-left: 0px;
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.Precios {
+  float: right;
+}
+
+.c_box_nombreProducto {
+  width: inherit;
+  /*margin: 0px;*/
+  border-style: inherit;
+}
+
+.c_box_descripcionProducto {
+  width: inherit;
+  border: none;
+  padding: 0px;
+  border-style: ridge none none none;
+  max-height: 50px;
+}
+
+.c_nombreProducto {
+  width: inherit;
+  background-color: rgba(255,255,255,0);
+  border-color: transparent;
+  margin: 0px;
+  /*border-style: inherit;*/
+  /*padding: 0px;*/
+  border-radius: 10px;
+}
+
+.c_descripcionProducto {
+  width: inherit;
+  height: inherit;
+  border-color: transparent;
+  background-color: rgba(255,255,255,0);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  text-align: center;
+}
+
+li {
+  float: left;
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 30px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li img {
+  max-width: 100%;
+  height: auto;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+c_precio {
+}
+
