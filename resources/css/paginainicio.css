@@ -1,3 +1,7 @@
+body{
+    background-color: #afafd8;
+    overflow: auto;
+}
 #front-menu{
     background-color: #bbc6ed;
     margin-top: -5px;
@@ -112,4 +116,87 @@
     height:40px;
     align-self: center;
     align-content: center;
+}
+#options-menu{
+    margin-top: 55px;
+    margin-left: -10px;
+    align-self: center;
+    align-content: center;
+    border-style: solid;
+    border-width: 0px 5px 5px 0px;
+    border-radius: 5px;
+    border-color: #6f82a4;
+    width: 400px;
+    background-color: white;
+}
+#city-selector{
+    margin-left: 30px;
+}
+#options-menu p{
+    margin-left: 50px;
+}
+#options-menu #options{
+    margin-left: 100px;
+}
+p{
+    font-family: "Verdana",sans-serif;
+}
+#imagepost{
+    width: 50%;
+    display: block;
+    align-self: center;
+}
+#pairpost-1{
+    margin-left: 450px;
+    margin-top: -30px;
+    background-color: white;
+    width: 400px;
+    display: block;
+    align-content: center;
+}
+#pairpost-1 p{
+    margin-left: 20px;
+}
+#pairpost-2{
+    margin-left: 900px;
+    margin-top: -298px;
+    background-color: white;
+    width: 400px;
+    align-content: center;
+}
+#pairpost-2 p {
+    margin-left: 20px;
+}
+#descriptionpost{
+}
+#tripletpost-1{
+    margin-left: 20px;
+    margin-top: 50px;
+    background-color: white;
+    width: 400px;
+    align-content: center;
+}
+#tripletpost-1 p {
+    margin-left: 20px;
+}
+#tripletpost-2{
+    margin-left: 450px;
+    margin-top: -298px;
+    background-color: white;
+    width: 400px;
+    display: block;
+    align-content: center;
+}
+#tripletpost-2 p{
+    margin-left: 20px;
+}
+#tripletpost-3{
+    margin-left: 900px;
+    margin-top: -298px;
+    background-color: white;
+    width: 400px;
+    align-content: center;
+}
+#tripletpost-3 p {
+    margin-left: 20px;
 }
