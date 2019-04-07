@@ -1,0 +1,202 @@
+body{
+    background-color: #afafd8;
+    overflow: auto;
+}
+#front-menu{
+    background-color: #bbc6ed;
+    margin-top: -5px;
+    margin-left: -10px;
+    margin-right: auto;
+    padding: 5px 15px;
+    position: fixed;
+    top:0;
+    align-self: center;
+    align-content: center;
+    width: 100%;
+    resize: both;
+    overflow: auto;
+}
+.imagenEmpresa{
+    height:40px;
+    margin-top: 5px;
+    margin-left: -5px;
+    margin-right: auto;
+    margin-bottom: auto;
+    align-self:initial;
+    display: inline;
+}
+#searcher{
+    margin-left:300px;
+    margin-right: auto;
+    margin-top: -47px;
+    margin-bottom: 15px;
+    align-self: center;
+    width: auto;
+    resize: both;
+    position: relative;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    top:25px;
+    left:50px;
+    width: 50px;
+    height: 35px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+    align-self: center;
+    align-content: center;
+}
+#searcher:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+#searcher:hover #searcher-input{
+    display: block;
+}
+
+#searcher:hover .fa{
+    background: #07051a;
+    color: white;
+}
+
+#searcher-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+    align-self: center;
+    align-content: center;
+}
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+    align-self: center;
+}
+#self-perfil{
+    text-decoration: none;
+    margin-right: 150px;
+    margin-left: 1150px;
+    margin-top: -100px;
+    align-self: center;
+    align-content: center;
+    width: auto;
+}
+#self-perfil:hover{
+    cursor: pointer;
+}
+#perfil-options{
+    margin-top: 80px;
+    margin-right: -20px;
+    margin-bottom: -30px;
+    align-content: center;
+    align-self: center;
+}
+#perfil{
+    height:40px;
+    align-self: center;
+    align-content: center;
+}
+#options-menu{
+    margin-top: 55px;
+    margin-left: -10px;
+    align-self: center;
+    align-content: center;
+    border-style: solid;
+    border-width: 0px 5px 5px 0px;
+    border-radius: 5px;
+    border-color: #6f82a4;
+    width: 400px;
+    background-color: white;
+}
+#city-selector{
+    margin-left: 30px;
+}
+#options-menu p{
+    margin-left: 50px;
+}
+#options-menu #options{
+    margin-left: 100px;
+}
+p{
+    font-family: "Verdana",sans-serif;
+}
+#imagepost{
+    width: 50%;
+    display: block;
+    align-self: center;
+}
+#pairpost-1{
+    margin-left: 450px;
+    margin-top: -30px;
+    background-color: white;
+    width: 400px;
+    display: block;
+    align-content: center;
+}
+#pairpost-1 p{
+    margin-left: 20px;
+}
+#pairpost-2{
+    margin-left: 900px;
+    margin-top: -298px;
+    background-color: white;
+    width: 400px;
+    align-content: center;
+}
+#pairpost-2 p {
+    margin-left: 20px;
+}
+#descriptionpost{
+}
+#tripletpost-1{
+    margin-left: 20px;
+    margin-top: 50px;
+    background-color: white;
+    width: 400px;
+    align-content: center;
+}
+#tripletpost-1 p {
+    margin-left: 20px;
+}
+#tripletpost-2{
+    margin-left: 450px;
+    margin-top: -298px;
+    background-color: white;
+    width: 400px;
+    display: block;
+    align-content: center;
+}
+#tripletpost-2 p{
+    margin-left: 20px;
+}
+#tripletpost-3{
+    margin-left: 900px;
+    margin-top: -298px;
+    background-color: white;
+    width: 400px;
+    align-content: center;
+}
+#tripletpost-3 p {
+    margin-left: 20px;
+}
