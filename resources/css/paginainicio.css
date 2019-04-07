@@ -117,9 +117,34 @@ body{
     align-self: center;
     align-content: center;
 }
+#menu-options{
+    margin-right: 232px;
+    margin-top: 40px;
+}
+#user-options{
+    display: inline-block;
+    list-style: none;
+    position: fixed;
+    text-align: left;
+    line-height: 30px;
+    align-content: center;
+}
+#user-options li{
+    align-self: center;
+    text-align: center;
+    background-color: #bbc6ed;
+    width: 150px;
+}
+#user-options li:hover{
+    background-color: #7ECAFB;
+    color: white;
+    transition-delay: 100ms;
+    cursor: pointer;
+}
 #options-menu{
-    margin-top: 55px;
+    margin-top: 15px;
     margin-left: -10px;
+    margin-bottom: -60px;
     align-self: center;
     align-content: center;
     border-style: solid;
@@ -128,6 +153,7 @@ body{
     border-color: #6f82a4;
     width: 400px;
     background-color: white;
+    display: inline-block;
 }
 #city-selector{
     margin-left: 30px;
@@ -145,6 +171,7 @@ p{
     width: 50%;
     display: block;
     align-self: center;
+    border: 1px solid black;
 }
 #pairpost-1{
     margin-left: 450px;
