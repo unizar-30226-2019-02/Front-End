@@ -12,7 +12,15 @@ document.getElementsByClassName("crearCuenta")[0].onclick=function(userID,userMa
     const url=dataBase+"/registrar?un="+usuario.value+"&pass="+password.value+"&cor="+correo.value+"&na="+nombre.value+"&lna="+apellidos.value+"&ci="+provincia.value+"&tel="+telefono.value;
     Http.open("GET", url);
     Http.send();
-    Http.onreadystatechange=(e)=>{
-        console.log(Http.responseText)
+    Http.onreadystatechange=function(){
+        if(Http.readyState==4){
+            var respuesta=Http.responseText;
+            if(respuesta.charAt(1)=="O"){
+                console.log("Usuario registrado");
+                window.location.assign("paginainicio.html");
+            } else{
+                console.log("Error al buscar usuario");
+            }
+        }
     }
 }
