@@ -1,5 +1,5 @@
 |Requisito | Descripcion de Prueba | Salida esperada | Superado|
 |----------|-----------------------|-----------------|---------|
-|RF1|prueba...|Error| - [x] |
+|RF1|prueba...|Error| - [x] done |
 
 - [x] superado
