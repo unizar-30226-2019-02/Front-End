@@ -3,7 +3,12 @@ var UserField=document.getElementsByClassName("userID")[0];
 var PasswdField=document.getElementsByClassName("passwdUser")[0];
 var UserError=document.getElementsByClassName("userError")[0];
 var PasswdError=document.getElementsByClassName("passwdError")[0];
+
 document.getElementsByClassName("iniciaSesion")[0].onclick=function(userID,passwdUser){
+  PasswdError.style.visibility="hidden";
+  PasswdField.style.borderColor="#7ECAFB";
+  UserError.style.visibility="hidden";
+  UserField.style.borderColor="#7ECAFB";
   var usuario=document.getElementsByClassName("userID")[0];
   var password=document.getElementsByClassName("passwdUser")[0];
   console.log("Usuario: ", usuario.value);
@@ -16,25 +21,56 @@ document.getElementsByClassName("iniciaSesion")[0].onclick=function(userID,passw
     if(Http.readyState==4){
       var respuesta=Http.responseText;
       if(respuesta.charAt(1)=="O"){
-        console.log("Usuario encontrado");
         window.location.assign("paginainicio.html");
       } else{
-        console.log("Error al buscar usuario");
-        UserError.style.visibility="visible";
-        PasswdError.style.visibility="visible";
-        UserField.style.borderColor="red";
-        PasswdField.style.borderColor="red";
+        respuestas=respuesta.split(" ");
+        if(respuestas[1] =="contraseña"){
+          PasswdError.style.visibility="visible";
+          PasswdField.style.borderColor="red";
+        }
+        else{
+          UserError.style.visibility="visible";
+          UserField.style.borderColor="red";
+        }
       }
     }
   }
 }
 
 
-document.getElementsByClassName("registrar")[0].onclick=function(){
-  console.log("Cargando pantalla de registro");
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  console.log("Nueva cookie")
+  console.log(document.cookie);
+  console.log(location.pathname);
 }
 
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 
-function iniciaSesion() {
-  console.log("Todo OK");
+function checkCookie() {
+  console.log(document.cookie);
+  console.log("Buscando cookie");
+  var user = getCookie("username");
+  if (user != "") {
+    window.location.assign("paginainicio.html");
+  }
+  else{
+    console.log("Cookie no encontrada");
+  }
 }
