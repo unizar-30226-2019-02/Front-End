@@ -3,14 +3,15 @@ var UserField=document.getElementsByClassName("userID")[0];
 var PasswdField=document.getElementsByClassName("passwdUser")[0];
 var UserError=document.getElementsByClassName("userError")[0];
 var PasswdError=document.getElementsByClassName("passwdError")[0];
+checkCookie();
 
 document.getElementsByClassName("iniciaSesion")[0].onclick=function(userID,passwdUser){
-  PasswdError.style.visibility="hidden";
   PasswdField.style.borderColor="#7ECAFB";
-  UserError.style.visibility="hidden";
   UserField.style.borderColor="#7ECAFB";
   var usuario=document.getElementsByClassName("userID")[0];
   var password=document.getElementsByClassName("passwdUser")[0];
+  var errorClass=document.getElementsByClassName("errors")[0];
+  var error="";
   console.log("Usuario: ", usuario.value);
   console.log("Contraseña: ",password.value);
   const Http =new XMLHttpRequest();
@@ -20,18 +21,26 @@ document.getElementsByClassName("iniciaSesion")[0].onclick=function(userID,passw
   Http.onreadystatechange=function(){
     if(Http.readyState==4){
       var respuesta=Http.responseText;
+      console.log(respuesta);
       if(respuesta.charAt(1)=="O"){
+        console.log(document.cookie);
+        setCookie("username",usuario.value,5);
+        console.log("cookie añadida");
+        console.log(document.cookie);
         window.location.assign("paginainicio.html");
       } else{
-        respuestas=respuesta.split(" ");
-        if(respuestas[1] =="contraseña"){
-          PasswdError.style.visibility="visible";
+        respuesta = respuesta.split(":")[1];
+        respuesta= respuesta.split("}")[0];
+        console.log(respuesta);
+        if(respuesta.split(" ")[1] =="contraseña"){
           PasswdField.style.borderColor="red";
+          error="<p>Contraseña incorrecta</p>\n";
         }
         else{
-          UserError.style.visibility="visible";
           UserField.style.borderColor="red";
+          error="<p>Nombre de usuario incorrecto</p>\n";
         }
+        errorClass.innerHTML=error;
       }
     }
   }

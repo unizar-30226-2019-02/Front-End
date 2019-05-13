@@ -36,14 +36,6 @@ body{
     display: inline-block;
     padding: 10px 20px;
 }
-.userError{
-    margin-left: 35px;
-    margin-top: 0px;
-    width: 70%;
-    display: inline-block;
-    padding: 10px 20px;
-    visibility: hidden;
-}
 .passwdUser{
     margin-left: 50px;
     width: 70%;
@@ -52,14 +44,6 @@ body{
     border: 1px solid #7ECAFB;
     display: inline-block;
     padding: 10px 20px;
-}
-.passwdError{
-    margin-left: 50px;
-    margin-top: 0px;
-    width: 70%;
-    display: inline-block;
-    padding: 5px 5px;
-    visibility: hidden;
 }
 .cabezaUsuario{
     margin-top: 5px;
@@ -98,6 +82,9 @@ body{
 .registrar:hover{
     background-color: white;
     border: 1px solid #7ECAFB;
+}
+.errors{
+    margin-left:50px;
 }
 a{
     text-decoration: none;
