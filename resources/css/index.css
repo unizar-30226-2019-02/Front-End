@@ -86,6 +86,17 @@ body{
 .errors{
     margin-left:50px;
 }
+.errors p{
+    margin-top: 20px;
+    width: 75%;
+    background-color: lightcoral;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: solid white;
+}
 a{
     text-decoration: none;
 }
