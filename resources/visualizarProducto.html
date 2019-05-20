@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ebrozon</title>
+    <link rel="stylesheet" href="css/paginainicio.css">
+    <link rel="stylesheet" href="css/visualizarProducto.css">
+</head>
+<body>
+    <div id="front-menu">
+      <img src="img/ebrozon.png" alt="Logo" class="imagenEmpresa">
+        <form action="" id="searcher">
+            <input type="search" id="searcher-input">
+            <i class="fa fa-search"></i>
+        </form>
+         <div id="self-perfil">
+            <p id="perfil-options" align="right">▾</p>
+            <img src="img/imagenUsuario.jpg" alt="Mi perfil" id="perfil" align="right">
+         </div>
+    </div>
+
+    <div id="menu-options" align="right">
+        <ul id="user-options">
+            <li id="perfil-ref">Mi Ebrozon</li>
+            <li id="upload-ref">Subir producto</li>
+            <li id="config-ref">Configuración</li>
+            <li id="cerrar-sesion">Cerrar Sesión</li>
+        </ul>
+    </div>
+
+    <div class="foto_titulo">
+        <img src="img/default.png" id="imagenProducto_1" class="imagenProducto" alt="Imagen con un cámara de fotos que representa una imagen por defecto">
+        <div class="cuadro_titulo">
+            <h1 id="titulo"> PRODUCTO </h1>
+        </div>
+    </div>
+
+    <div class="cuadro_precio">
+        <h1 id="precio"> precio <span class="simboloEuro">€</span> </h1>
+    </div>
+
+    <div class="cuadro_descripcion">
+        <p id="descripcion"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+            the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" alt="Imagen relativa al producto que se muestra al haber hecho click sobre la imagen en la página de visualizar producto" id="img01">
+        <div id="caption"></div>
+    </div>
+
+
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("imagenProducto_1");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        //Capturar el texto a poner debajo del modal
+        var tituloProducto = document.getElementById("titulo");
+
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = tituloProducto.textContent;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
