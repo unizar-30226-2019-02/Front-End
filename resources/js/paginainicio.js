@@ -2,8 +2,26 @@ var dataBase = "https://protected-caverns-60859.herokuapp.com"
 var Menu=document.getElementById("menu-options");
 var Perfil=document.getElementById("self-perfil");
 Menu.style.visibility="hidden";
-var user=getCookie("username");
 checkCookie();
+var user=getCookie("username");
+const Http =new XMLHttpRequest();
+const url=dataBase+"/listarPaginaPrincipal?&id=0";
+Http.open("GET", url);
+Http.send();
+Http.onreadystatechange=function() {
+    if (Http.readyState == 4) {
+        var respuesta=Http.response;
+        console.log(respuesta);
+        respuesta= respuesta.replace("[","");
+        console.log(respuesta);
+        respuesta= respuesta.replace("}","}}");
+        console.log(respuesta);
+        respuesta= respuesta.split("},");
+        console.log(respuesta[0]);
+        console.log(respuesta[6]);
+    }
+}
+
 
 document.getElementById("self-perfil").onclick= function () {
     if(Menu.style.visibility=="visible"){
@@ -57,6 +75,6 @@ function checkCookie() {
         window.location.assign("index.html");
     }
     else{
-        console.log("Cookie no encontrada");
+        console.log("Cookie encontrada");
     }
 }
