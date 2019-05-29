@@ -16,6 +16,7 @@ body{
     resize: both;
     overflow: auto;
 }
+
 .imagenEmpresa{
     height:40px;
     margin-top: 5px;
@@ -47,6 +48,7 @@ body{
     align-self: center;
     align-content: center;
 }
+
 #searcher:hover{
     width: 200px;
     cursor: pointer;
@@ -77,6 +79,7 @@ body{
     align-self: center;
     align-content: center;
 }
+
 .fa{
     box-sizing: border-box;
     padding: 10px;
@@ -101,6 +104,12 @@ body{
     align-content: center;
     width: auto;
 }
+
+#boton_localizacion{
+    margin-left: 375px;
+
+}
+
 #self-perfil:hover{
     cursor: pointer;
 }
