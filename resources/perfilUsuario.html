@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ebrozon</title>
+    <link rel="stylesheet" href="css/paginainicio.css">
+    <link rel="stylesheet" href="css/perfilUsuario.css">
+</head>
+<body>
+<div id="front-menu">
+    <img src="img/ebrozon.png" alt="Logo" class="imagenEmpresa">
+    <form action="" id="searcher">
+        <input type="search" id="searcher-input">
+        <i class="fa fa-search"></i>
+    </form>
+    <div id="self-perfil">
+        <p id="perfil-options" align="right">▾</p>
+        <img src="img/imagenUsuario.jpg" alt="Mi perfil" id="perfil" align="right">
+        <button type="button" id="boton_localizacion" onclick="alert('Localización actualizadaq')">Actualizar localización</button>
+    </div>
+</div>
+
+<div id="menu-options" align="right">
+    <ul id="user-options">
+        <li id="perfil-ref">Mi Ebrozon</li>
+        <li id="upload-ref">Subir producto</li>
+        <li id="config-ref">Configuración</li>
+        <li id="cerrar-sesion">Cerrar Sesión</li>
+    </ul>
+</div>
+
+<div class="div_titulo">
+    <h1 id="h1_tituloPantalla">Tu perfil</h1>
+</div>
+
+<div id="div_cuadroInfo">
+    <div id="div_cuadroFoto">
+
+        <div id="div_foto">
+            <img src="img/default.png" id="imagenPerfil" alt="Imagen asociada al perfil de tu usuario">
+        </div>
+
+        <div id="div_nombrePerfil">
+            <p id="p_nombrePerfil"><b>nombreUsuario</b></p>
+        </div>
+
+        <div id="div_valoracion">
+            <fieldset class="val-fieldset">
+                <legend>Calificación:</legend>
+                <span class="valoracion val-35"></span>
+            </fieldset>
+        </div>
+
+
+    </div>
+
+    <div id="div_textInfoPerfil">
+        <p class="p_titulo" id="p_tituloNombreCompleto">NOMBRE</p>
+        <p id="p_nombreCompleto">elNombre</p>
+        <p class="p_titulo" id="p_tituloMail">DIRECCIÓN DE CORREO</p>
+        <p id="p_mail">user_email</p>
+        <p class="p_titulo" id="p_tituloProvincia">PROVINCIA</p>
+        <p id="p_provincia">user_province</p>
+        <p class="p_titulo" id="p_tituloCiudad">CIUDAD</p>
+        <p id="p_ciudad">user_city</p>
+
+        <div id="div_numCompraVenta">
+
+            <div id="div_numCompras">
+               <p class="p_titulo dato_valor" id="p_compras"> <a href="#compras" >Compras:</a> </p>
+                <p class="dato_valor" id="p_numCompras"> 000 </p>
+            </div>
+
+            <div id="div_numVentas" >
+                <p class="p_titulo dato_valor" id="p_ventas"> <a href="#ventas" >Ventas:</a> </p>
+                <p class="dato_valor" id="p_numVentas"> 000 </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<h1 class="p_titulo" id="p_tituloValoraciones">Valoraciones</h1>
+<div id="div_valoraciones" >
+    <p id="p_valoracionesUsuarios"> <a href="#valoraciones_de_usuarios" >VALORACIONES DE USUARIOS</a> </p>
+    <p id="p_misValoraciones"> <a href="#mis_valoraciones" >MIS VALORACIONES</a> </p>
+
+</div>
+
+
+
+
+
+</body>
+</html>
