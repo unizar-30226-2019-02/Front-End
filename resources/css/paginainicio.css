@@ -105,11 +105,6 @@ body{
     width: auto;
 }
 
-#boton_localizacion{
-    margin-left: 375px;
-
-}
-
 #self-perfil:hover{
     cursor: pointer;
 }
