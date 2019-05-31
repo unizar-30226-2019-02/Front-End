@@ -16,7 +16,6 @@
     <div id="self-perfil">
         <p id="perfil-options" align="right">▾</p>
         <img src="img/imagenUsuario.jpg" alt="Mi perfil" id="perfil" align="right">
-        <button type="button" id="boton_localizacion" onclick="alert('Localización actualizadaq')">Actualizar localización</button>
     </div>
 </div>
 
@@ -31,6 +30,9 @@
 
 <div class="div_titulo">
     <h1 id="h1_tituloPantalla">Tu perfil</h1>
+    <button type="button" id="boton_localizacion" >Actualizar localización</button>
+    <button type="button" id="actualizar_perfil" >Actualizar perfil</button>
+
 </div>
 
 <div id="div_cuadroInfo">
@@ -47,7 +49,7 @@
         <div id="div_valoracion">
             <fieldset class="val-fieldset">
                 <legend>Calificación:</legend>
-                <span class="valoracion val-35"></span>
+                <span class="valoracion val-25"></span>
             </fieldset>
         </div>
 
@@ -84,9 +86,20 @@
 
 <h1 class="p_titulo" id="p_tituloValoraciones">Valoraciones</h1>
 <div id="div_valoraciones" >
-    <p id="p_valoracionesUsuarios"> <a href="#valoraciones_de_usuarios" >VALORACIONES DE USUARIOS</a> </p>
-    <p id="p_misValoraciones"> <a href="#mis_valoraciones" >MIS VALORACIONES</a> </p>
-
+    <div id="p_valoracionesUsuarios"> <a href="#valoraciones_de_usuarios" >VALORACIONES DE USUARIOS</a>
+        <div class="opinion-1">
+            <p class="nombreValoracion">Juan Vazquez </p>
+            <span class="valoracion val-15"></span>
+            <p class="textoValoracion">Me ha gustado </p>
+        </div>
+    </div>
+    <div id="p_misValoraciones"> <a href="#mis_valoraciones" >MIS VALORACIONES</a>
+        <div class="opinion-1">
+            <p class="nombreValoracion">Mateo Velazquez </p>
+            <span class="valoracion val-15"></span>
+            <p class="textoValoracion">Me ha gustado </p>
+        </div>
+    </div>
 </div>
 
 
@@ -94,4 +107,5 @@
 
 
 </body>
+<script src="js/perfilUsuario.js"></script>
 </html>

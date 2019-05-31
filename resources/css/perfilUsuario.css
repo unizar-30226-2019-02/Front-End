@@ -1,4 +1,6 @@
 body{
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: #f5f5f5;
     overflow: auto;
 }
@@ -15,6 +17,64 @@ body{
     width: 100%;
     resize: both;
     overflow: auto;
+}
+.imagenEmpresa{
+    height:40px;
+    margin-top: 5px;
+    margin-left: -5px;
+    margin-right: auto;
+    margin-bottom: auto;
+    align-self:initial;
+    display: inline;
+}
+
+#self-perfil{
+    text-decoration: none;
+    margin-right: 25%;
+    margin-left: 50px;
+    margin-top: -100px;
+    align-self: center;
+    align-content: center;
+    width: auto;
+}
+#self-perfil:hover{
+    cursor: pointer;
+}
+#perfil{
+    height:40px;
+    align-self: center;
+    align-content: center;
+}
+#perfil-options{
+    margin-top: 80px;
+    margin-right: 20px;
+    margin-bottom: -30px;
+    align-content: center;
+    align-self: center;
+}
+#menu-options{
+    margin-right: 232px;
+    margin-top: 40px;
+}
+#user-options{
+    display: inline-block;
+    list-style: none;
+    position: fixed;
+    text-align: left;
+    line-height: 30px;
+    align-content: center;
+}
+#user-options li{
+    align-self: center;
+    text-align: center;
+    background-color: #bbc6ed;
+    width: 150px;
+}
+#user-options li:hover{
+    background-color: #7ECAFB;
+    color: white;
+    transition-delay: 100ms;
+    cursor: pointer;
 }
 
 .div_titulo{
@@ -47,8 +107,8 @@ body{
 }
 
 #imagenPerfil{
+    height:250px;
     max-width: 80%;
-    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -57,6 +117,7 @@ body{
 
 /*Nombre de perfil*/
 #div_nombrePerfil{
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -70,6 +131,7 @@ body{
 /* Estrellas de valoración
 ----------------------------------------------- */
 #div_valoracion{
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -101,9 +163,7 @@ body{
 
 
 /* OTROS*/
-li{
-    display: inline;
-}
+
 
 ul {
  list-style-type: none;
@@ -122,19 +182,34 @@ ul {
 
 /*Información de la derecha de la pantalla*/
 p.p_titulo{
+    margin-left: 10%;
     color: steelblue;
 }
+#p_nombreCompleto{
+    margin-left: 10%;
+}
 
+#p_mail{
+    margin-left: 10%;
+}
+#p_provincia{
+    margin-left: 10%;
+}
+#p_ciudad{
+    margin-left: 10%;
+}
+#div_numCompras{
+    margin-left: 40%;
+}
 #div_numCompraVenta{
+    margin-top: 50px;
     display: grid;
     grid-column-gap: 50%;
     grid-template-columns: 20% 20%;
     grid-template-rows: auto;
 }
 
-#div_numCompras{
 
-}
 
 .dato_valor{
     display:inline;
@@ -146,13 +221,28 @@ p.p_titulo{
 #p_valoracionesUsuarios{
     display:inline;
 }
+
 #p_misValoraciones{
     display:inline;
 }
+
+.opinion-1{
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid darkgrey;
+
+    border-radius: 20px;
+    display: inline-list-item;
+}
+
 
 #div_valoraciones{
     display: grid;
     grid-column-gap: 40%;
     grid-template-columns: 30% 30%;
     grid-template-rows: auto;
+}
+
+.nombreValoracion{
+    color: #7ECAFB;
 }
