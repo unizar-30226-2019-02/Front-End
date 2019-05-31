@@ -1,5 +1,5 @@
 body{
-    background-color: #E6E6FA;
+    background-color: #f5f5f5;
     overflow: auto;
 }
 #front-menu{
@@ -152,4 +152,63 @@ body{
 }
 .inputFile{
     margin-top: 50px;
+}
+.productName{
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 550px;
+}
+.productDesc{
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 550px;
+}
+.precioVenta{
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 550px;
+}
+.precioCompraYa{
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 550px;
+}
+.fechafin{
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 550px;
+}
+.precioSubasta{
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #7ECAFB;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 550px;
+}
+#form{
+    margin-left: 30px;
+    margin-top: 100px;
+}
+#menu-options{margin-top: -50px;}
+.confirmarProducto{
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #7ECAFB;
+    margin-left: 50px;
 }

@@ -189,7 +189,7 @@ function addPost(productos,prodnum) {
                 console.log("YOUUUU");
                 console.log(Http.responseText);
                 var response = Http.responseText.replace(/\n/g, "");
-                listofposts = listofposts + "<a href=\"producto.html?id="+lastID+"\"<div class=\"post-"+num+"\">\n" +
+                listofposts = listofposts + "<a href=\"visualizarProducto.html?id="+lastID+"\"<div class=\"post-"+num+"\">\n" +
                     "            <img src=" + "data:image/png;base64," + response + ">\n" +
                     "            <p class=\"priceProd\">" + precio + " €</p>\n" +
                     "            <p class=\"titleProd\">" + titulo + "</p>\n" +
