@@ -7,7 +7,7 @@ body{
 #front-menu{
     background-color: #bbc6ed;
     margin-top: -5px;
-    margin-left: -10px;
+    margin-left: -10%;
     margin-right: auto;
     padding: 5px 15px;
     position: fixed;
@@ -19,6 +19,7 @@ body{
     overflow: auto;
 }
 .imagenEmpresa{
+    cursor: pointer;
     height:40px;
     margin-top: 5px;
     margin-left: -5px;
@@ -30,7 +31,7 @@ body{
 
 #self-perfil{
     text-decoration: none;
-    margin-right: 25%;
+    margin-right: 10%;
     margin-left: 50px;
     margin-top: -100px;
     align-self: center;
@@ -57,6 +58,7 @@ body{
     margin-top: 40px;
 }
 #user-options{
+    margin-left: 5%;
     display: inline-block;
     list-style: none;
     position: fixed;

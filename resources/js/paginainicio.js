@@ -85,17 +85,11 @@ Http.onreadystatechange=function() {
     }
 }
 
-
-document.getElementById("self-perfil").onclick= function () {
-    if(Menu.style.visibility=="visible"){
-        Menu.style.visibility="hidden";
-    }else{
-        Menu.style.visibility="visible";
-    }
-}
-
 document.getElementById("perfil-ref").onclick= function () {
-    window.location.assign("perfil.html");
+    window.location.assign("perfilUsuario.html");
+}
+document.getElementById("config-ref").onclick= function () {
+    window.location.assign("editarPerfil.html");
 }
 
 document.getElementById("cerrar-sesion").onclick= function () {
@@ -105,6 +99,10 @@ document.getElementById("cerrar-sesion").onclick= function () {
 document.getElementById("upload-ref").onclick= function () {
     window.location.assign("subirproducto.html");
 }
+document.getElementsByClassName("imagenEmpresa")[0].onclick= function(){
+    window.location.assign("paginainicio.html");
+}
+
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -702,5 +700,12 @@ rango.onchange=function () {
                 }
             }
         }
+    }
+}
+document.getElementById("self-perfil").onclick= function () {
+    if(Menu.style.visibility=="visible"){
+        Menu.style.visibility="hidden";
+    }else{
+        Menu.style.visibility="visible";
     }
 }

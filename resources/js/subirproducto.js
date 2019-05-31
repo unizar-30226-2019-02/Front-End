@@ -340,7 +340,10 @@ document.getElementById("self-perfil").onclick= function () {
     }
 }
 document.getElementById("perfil-ref").onclick= function () {
-    window.location.assign("perfil.html");
+    window.location.assign("perfilUsuario.html");
+}
+document.getElementById("config-ref").onclick= function () {
+    window.location.assign("editarPerfil.html");
 }
 
 document.getElementById("cerrar-sesion").onclick= function () {
@@ -349,4 +352,7 @@ document.getElementById("cerrar-sesion").onclick= function () {
 }
 document.getElementById("upload-ref").onclick= function () {
     window.location.assign("subirproducto.html");
+}
+document.getElementsByClassName("imagenEmpresa")[0].onclick= function(){
+    window.location.assign("paginainicio.html");
 }

@@ -74,7 +74,10 @@ document.getElementById("self-perfil").onclick= function () {
     }
 }
 document.getElementById("perfil-ref").onclick= function () {
-    window.location.assign("perfil.html");
+    window.location.assign("perfilUsuario.html");
+}
+document.getElementById("confog-ref").onclick= function () {
+    window.location.assign("editarPerfil.html");
 }
 
 document.getElementById("cerrar-sesion").onclick= function () {
@@ -83,6 +86,9 @@ document.getElementById("cerrar-sesion").onclick= function () {
 }
 document.getElementById("upload-ref").onclick= function () {
     window.location.assign("subirproducto.html");
+}
+document.getElementsByClassName("imagenEmpresa")[0].onclick =function () {
+    window.location.assign("paginainicio.html");
 }
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
@@ -120,9 +126,7 @@ function checkCookie() {
         console.log("Cookie encontrada");
     }
 }
-document.getElementsByClassName("imagenEmpresa")[0].onclick =function () {
-    window.location.assign("paginainicio.html");
-}
+
 var params=window.location.toString();
 params=params.split("id=")[1];
 var url=dataBase+"/recuperarProducto?&id="+params;

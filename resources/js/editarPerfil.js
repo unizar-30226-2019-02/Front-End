@@ -72,6 +72,11 @@ document.getElementById("upload-ref").onclick= function () {
 document.getElementById("config-ref").onclick= function () {
     window.location.assign("editarPerfil.html");
 }
+
+document.getElementsByClassName("imagenEmpresa")[0].onclick= function(){
+    window.location.assign("paginainicio.html");
+}
+
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
