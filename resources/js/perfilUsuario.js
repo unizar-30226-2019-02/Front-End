@@ -144,6 +144,13 @@ if(Http.status==200){
 
 
 
+document.getElementById("perfil-ref").onclick= function () {
+    window.location.assign("perfilUsuario.html");
+}
+document.getElementById("config-ref").onclick= function () {
+    window.location.assign("editarPerfil.html");
+}
+
 document.getElementById("cerrar-sesion").onclick= function () {
     setCookie("username",user.value, -1);
     window.location.assign("index.html");
@@ -151,8 +158,8 @@ document.getElementById("cerrar-sesion").onclick= function () {
 document.getElementById("upload-ref").onclick= function () {
     window.location.assign("subirproducto.html");
 }
-document.getElementById("config-ref").onclick= function () {
-    window.location.assign("editarPerfil.html");
+document.getElementsByClassName("imagenEmpresa")[0].onclick= function(){
+    window.location.assign("paginainicio.html");
 }
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();

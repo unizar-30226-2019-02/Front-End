@@ -19,6 +19,7 @@ body{
     overflow: auto;
 }
 .imagenEmpresa{
+    cursor: pointer;
     height:40px;
     margin-top: 5px;
     margin-left: -5px;
