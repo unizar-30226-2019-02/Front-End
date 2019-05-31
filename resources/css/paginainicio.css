@@ -157,21 +157,47 @@ body{
     display: inline-block;
 }
 #city-selector{
-    margin-left: 30px;
+    margin-left: 36px;
+    background-color: white;
+    border: 1px solid #7ECAFB;
+    border-radius: 4px;
 }
 #type-selector{
-    margin-left: 60px;
+    margin-left: 68px;
+    background-color: white;
+    border: 1px solid #7ECAFB;
+    border-radius: 4px;
 }
 
 #cat-selector{
-    margin-left: 28px;
+    margin-left: 36px;
+    background-color: white;
+    border: 1px solid #7ECAFB;
+    border-radius: 4px;
 }
 #order-selector{
-    margin-left: 12px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid #7ECAFB;
+    border-radius: 4px;
 }
 
 #range-selector{
-    margin-left: 12px;
+    margin-left: 38px;
+    background-color: white;
+    border: 1px solid #7ECAFB;
+    border-radius: 4px;
+}
+#minprice-selector{
+    background-color: white;
+    border: 1px solid #7ECAFB;
+    border-radius: 4px;
+    margin-left: 2px;
+}
+#maxprice-selector{
+    background-color: white;
+    border: 1px solid #7ECAFB;
+    border-radius: 4px;
 }
 #options-menu p{
     margin-left: 50px;

@@ -16,11 +16,33 @@ var file4=document.getElementsByClassName("File4")[0];
 var selectedOption=document.getElementsByClassName("options")[0];
 var botonGuardar=document.getElementsByClassName("confirmarProducto")[0];
 var errors=document.getElementsByClassName("errores")[0];
+var category=document.getElementById("cat-selector");
 var option="Venta";
+var Menu=document.getElementById("menu-options");
+Menu.style.visibility="hidden";
 image1.src="#";
 image2.src="#";
 image3.src="#";
 image4.src="#";
+checkCookie();
+var perfil=document.getElementById("perfil");
+var user=getCookie("username");
+const Http =new XMLHttpRequest();
+const Http1 =new XMLHttpRequest();
+var url2=dataBase+"/recuperarUsuario?un="+user;
+Http.open("GET",url2,false);
+Http.send();
+if(Http.status==200){
+    var archivp=Http.responseText;
+    archivp=archivp.split("\"urlArchivo\":\"")[1];
+    archivp=archivp.split("\"")[0];
+    url2=dataBase+"/loadArchivoTemp?id="+archivp;
+    Http.open("GET",url2,false);
+    Http.send();
+    if(Http.status==200) {
+        perfil.src = "data:image/png;base64," + Http.responseText;
+    }
+}
 
 type.onclick=function () {
         if(option =="Subasta"){
@@ -151,27 +173,29 @@ botonGuardar.onclick=function () {
             listaErrores+="<p>Introduzca al menos una imagen</p>\n";
         }
         if(listaErrores==""){
-            var src=new FormData();
-            src.append("arc1",image1.src);
+            var source=new FormData();
+            source.append("arc1",image1.src);
+            console.log(image1.src);
             if(image2.src != window.location +"#"){
-                src.append("arc2",image2.src);
+                source.append("arc2",image2.src);
             }
             if(image3.src != window.location +"#"){
-                src.append("arc3",image3.src);
+                source.append("arc3",image3.src);
             }
             if(image4.src != window.location +"#"){
-                src.append("arc4",image4.src);
+                source.append("arc4",image4.src);
             }
             const Http =new XMLHttpRequest();
-            const url=dataBase+"/publicarVenta?un=karny3&prod="+productName.value+"&desc="+productDesc.value+"&pre="
-                +precioVenta.value;
+            const url=dataBase+"/publicarVenta?un="+user+"&prod="+productName.value+"&desc="+productDesc.value+"&pre="
+                +precioVenta.value+"&cat="+category.value;
             Http.open("POST", url);
-            Http.send(src);
+            Http.send(source);
             Http.onreadystatechange=function() {
                 if (Http.readyState == 4) {
                     var respuesta=Http.responseText;
                     if(respuesta.charAt(1)=="O"){
                         console.log("Producto registrado");
+                        window.location.assign("paginainicio.html");
                     } else{
                         console.log("Error al subir producto");
                         respuesta = respuesta.split(":")[1];
@@ -236,7 +260,7 @@ botonGuardar.onclick=function () {
             var finalDate=date.getTime();
             const Http =new XMLHttpRequest();
             const url=dataBase+"/publicarSubasta?un=karny3&prod="+productName.value+"&desc="+productDesc.value+"&pre="
-                +precioCompraYa.value+"&end="+finalDate+"&pin="+precioSubasta.value;
+                +precioCompraYa.value+"&end="+finalDate+"&pin="+precioSubasta.value+"&cat="+category.value;
             Http.open("POST", url);
             Http.send(src);
             Http.onreadystatechange=function() {
@@ -245,6 +269,7 @@ botonGuardar.onclick=function () {
                     console.log(respuesta);
                     if(respuesta.charAt(1)=="O"){
                         console.log("Subasta registrada");
+                        window.location.assign("paginainicio.html");
                     } else{
                         console.log("Error al subir subasta");
                         respuesta = respuesta.split(":")[1];
@@ -269,4 +294,59 @@ botonGuardar.onclick=function () {
             errors.innerHTML=listaErrores;
         }
     }
+}
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    console.log("Nueva cookie")
+    console.log(document.cookie);
+    console.log(location.pathname);
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    console.log(document.cookie);
+    console.log("Buscando cookie");
+    var user = getCookie("username");
+    if (user == "") {
+        window.location.assign("index.html");
+    }
+    else{
+        console.log("Cookie encontrada");
+    }
+}
+document.getElementById("self-perfil").onclick= function () {
+    console.log("YOOOO");
+    if(Menu.style.visibility=="visible"){
+        Menu.style.visibility="hidden";
+    }else{
+        Menu.style.visibility="visible";
+    }
+}
+document.getElementById("perfil-ref").onclick= function () {
+    window.location.assign("perfil.html");
+}
+
+document.getElementById("cerrar-sesion").onclick= function () {
+    setCookie("username",user.value, -1);
+    window.location.assign("index.html");
+}
+document.getElementById("upload-ref").onclick= function () {
+    window.location.assign("subirproducto.html");
 }
