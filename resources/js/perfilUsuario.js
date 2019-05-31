@@ -116,13 +116,19 @@ if(Http.status==200){
     if(Http.status==200) {
         console.log("B");
         respuesta=Http.responseText;
-        console.log(Http.responseText);
         respuesta = respuesta.replace("[{", "");
         respuesta = respuesta.replace("}]", "");
         respuesta = respuesta.split("},{");
         listofposts +=     "<div id=\"p_valoracionesUsuarios\"> <a href=\"#valoraciones_de_usuarios\" >VALORACIONES DE USUARIOS</a>\n"
-
-        addPost(respuesta, 0);
+        console.log(respuesta);
+        if (0 == respuesta.length - 1) {
+            listofposts += "</div>"
+            valUsuario.innerHTML = listofposts;
+            listofposts="";
+        }
+        else {
+            addPost(respuesta, 0);
+        }
     }
     url2=dataBase+"/listarOpinionesHechas?un="+user;
     Http.open("GET",url2,false);
@@ -137,7 +143,16 @@ if(Http.status==200){
         respuesta = respuesta.split("},{");
         console.log(respuesta);
         listofposts +=     "<div id=\"p_misValoraciones\"> <a href=\"#mis_valoraciones\" >MIS VALORACIONES</a>\n"
-        addPost2(respuesta, 0);
+        console.log(respuesta);
+        console.log(respuesta.length)
+        if (0 == respuesta.length - 1) {
+            listofposts += "</div>"
+            misVal.innerHTML = listofposts;
+            listofposts="";
+        }
+        else {
+            addPost2(respuesta, 0);
+        }
     }
 
 }
