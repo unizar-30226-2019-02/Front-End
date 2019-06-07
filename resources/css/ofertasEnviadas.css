@@ -1,0 +1,134 @@
+#dynamic-list{
+    list-style: none;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    border-bottom-style: ridge;
+    border-width: medium;
+}
+#dynamic-list2{
+    list-style: none;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    border-bottom-style: ridge;
+    border-width: medium;
+}
+.inline{
+}
+
+li{
+    border-bottom-style: ridge;
+    border-width: medium;
+    padding: 5px;
+
+}
+
+.block{
+    display: block;
+}
+
+.entradas{
+
+}
+
+#precio{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#div_precio{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20px;
+}
+
+#ofertaORcompra{
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+#botonRecibido{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botonEnviado{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#username{
+    margin-left: 20%;
+    margin-right: auto;
+}
+
+#fecha{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#div_fecha{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40px;
+}
+
+
+#div_tituloPantalla{
+    background-color: #7ECAFB;
+    border-style: ridge;
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 40px;
+    grid-row-gap: 20px;
+
+
+}
+
+#div_titulo{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tituloPantalla{
+        display: inline;
+}
+
+#botonesRecibidoORenviado{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    height: 20px;
+}
+
+#botonesDecision{
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    height: auto;
+}
+
+
+
+.boton{
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    background-color: navy;
+    color: white;
+}
+
+#botonCancelar{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botonChat{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#div_elemento{
+    margin-top: 10%;
+}

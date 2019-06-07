@@ -88,8 +88,18 @@ Http.onreadystatechange=function() {
 document.getElementById("perfil-ref").onclick= function () {
     window.location.assign("perfilUsuario.html");
 }
+document.getElementById("perfil-ref").onclick= function () {
+    window.location.assign("perfilUsuario.html");
+}
+
 document.getElementById("config-ref").onclick= function () {
     window.location.assign("editarPerfil.html");
+}
+document.getElementById("enviadas-ref").onclick= function () {
+    window.location.assign("ofertasEnviadas.html");
+}
+document.getElementById("recibidas-ref").onclick= function () {
+    window.location.assign("ofertaRecibidas.html");
 }
 
 document.getElementById("cerrar-sesion").onclick= function () {

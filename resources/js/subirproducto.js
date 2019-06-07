@@ -345,6 +345,12 @@ document.getElementById("perfil-ref").onclick= function () {
 document.getElementById("config-ref").onclick= function () {
     window.location.assign("editarPerfil.html");
 }
+document.getElementById("enviadas-ref").onclick= function () {
+    window.location.assign("ofertasEnviadas.html");
+}
+document.getElementById("recibidas-ref").onclick= function () {
+    window.location.assign("ofertasRecibidas.html");
+}
 
 document.getElementById("cerrar-sesion").onclick= function () {
     setCookie("username",user.value, -1);
