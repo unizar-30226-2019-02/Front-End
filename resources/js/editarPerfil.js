@@ -72,6 +72,12 @@ document.getElementById("upload-ref").onclick= function () {
 document.getElementById("config-ref").onclick= function () {
     window.location.assign("editarPerfil.html");
 }
+document.getElementById("enviadas-ref").onclick= function () {
+    window.location.assign("ofertasEnviadas.html");
+}
+document.getElementById("recibidas-ref").onclick= function () {
+    window.location.assign("ofertasRecibidas.html");
+}
 
 document.getElementsByClassName("imagenEmpresa")[0].onclick= function(){
     window.location.assign("paginainicio.html");
